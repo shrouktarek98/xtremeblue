@@ -1,0 +1,43 @@
+.breadcrumb-area {
+    margin-bottom: 30px;
+}
+
+.allproduct {
+    width: 85%;
+}
+
+.pproduct {
+    border: 1px solid #ddd;
+    margin: 0px 5px 30px;
+    height: 300px;
+    overflow-y: scroll;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.allproduct .pproduct .productname,
+.allproduct .pproduct .tradename,
+.allproduct .pproduct .group,
+.allproduct .pproduct .industry,
+.allproduct .pproduct .suppliers {
+    color: #007bff;
+    margin-bottom: 18px;
+}
+
+.allproduct .pproduct .productname span,
+.allproduct .pproduct .tradename span,
+.allproduct .pproduct .group span,
+.allproduct .pproduct .industry span,
+.allproduct .pproduct .arraysupplier {
+    color: black;
+}
+
+.tds {
+    float: right;
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    background: #007bff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

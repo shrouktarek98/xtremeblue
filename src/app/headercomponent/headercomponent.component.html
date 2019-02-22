@@ -1,0 +1,60 @@
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+    <!-- Navbar Area -->
+    <div class="pixel-main-menu" id="sticker">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container-fluid">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="pixelNav">
+
+                    <!-- Nav brand -->
+                    <!-- <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a> -->
+                    <a href="index.html" class="nav-brand">
+                        <p style="font-size: 30px; color: white; margin-top: 15px;">ExtremeBlue</p>
+                    </a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li id="protifile" (click)='displaylink()'><a [routerLink]="['/protflio']">Home</a></li>
+                                <li id="about" (click)='hidelink()'><a [routerLink]="['/about']">About</a></li>
+                                <li id="supplier" (click)='displaylink()'><a [routerLink]="['/supplier']">Supplier</a></li>
+                                <li id="product" (click)='displaylink()'><a [routerLink]="['/product']">Products</a></li>
+                                <li id="service" (click)='hidelink()'><a [routerLink]="['/servics']">Services</a></li>
+                                <li id="industry" (click)='hidelink()'><a [routerLink]="['/element']">Industries</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Industry1</a></li>
+                                        <li><a href="#">Industry2</a></li>
+                                        <li><a href="#">Industry3</a></li>
+                                        <li><a href="#">Industry4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a [routerLink]="['/contact']">Contact</a></li>
+                            </ul>
+
+                            <!-- Top Social Info -->
+                            <div class="top-social-info ml-5">
+                                <a href="http://w{{con.Link}}" target="_blank" *ngFor="let con of arraycontact.SocialMediaLinks"><i class="fa fa-{{con.Type|lowercase}}"></i></a>
+                            </div>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->

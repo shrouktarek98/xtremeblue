@@ -1,0 +1,26 @@
+<!-- ##### Breadcrumb Area Start ##### -->
+<section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(../../assets/img/bg-img/8.jpg);">
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <h2>Suppliers</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Breadcrumb Area End ##### -->
+<div class="container-fluid allsupplier">
+    <div class="row">
+        <div class="col-4" *ngFor="let supp of arraysuppliers">
+            <div class="supplier">
+                <div class="img"><img src="{{supp.Logo}}" alt="Card image cap"></div>
+                <h4 class="suppliername">Supplier Name <span>{{supp.Name}}</span></h4>
+                <h5 class="websitelink"><a href="http://{{supp.Brief}}" target="_blank">Website Link</a></h5>
+                <h5 class="indusstry">Industries</h5>
+                <h4 class="industryname" *ngFor="let indus of supp.Industries">{{indus.Name}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

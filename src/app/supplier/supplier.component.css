@@ -1,0 +1,37 @@
+.allsupplier {
+    width: 85%;
+}
+
+.allsupplier .supplier {
+    margin: 15px 0px;
+    min-height: 420px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.allsupplier .supplier .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.allsupplier .supplier .img {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 210px;
+}
+
+.allsupplier .supplier .suppliername,
+.allsupplier .supplier .websitelink,
+.allsupplier .supplier .indusstry {
+    color: #007bff;
+    margin-bottom: 13px;
+}
+
+.allsupplier .supplier .suppliername span {
+    color: black;
+}
+
+.allsupplier .supplier .websitelink a {
+    text-decoration: none;
+}

@@ -1,0 +1,37 @@
+<!-- ##### Breadcrumb Area Start ##### -->
+<section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(../../assets/img/bg-img/8.jpg);">
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <h2>Products</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Breadcrumb Area End ##### -->
+<div class="container-fluid allproduct">
+    <div class="row">
+
+        <div class="col-6" *ngFor="let pro of arrayproducts">
+            <div class="pproduct">
+                <h4 class="productname">Product Name <span>{{pro.Name}}</span></h4>
+                <h5 class="tradename">Trade Name <span>{{pro.TradeName}}</span></h5>
+                <h6 class="group" *ngIf="pro.Group == null; else anothergroup">Group <span style="color:blueviolet">No Group Yet</span></h6>
+                <ng-template #anothergroup>
+                    <h6 class="group">Group <span>{{pro.Group.Name}}</span></h6>
+                </ng-template>
+                <h6 class="industry">Industry Name <span *ngIf="pro.Industry!=null">{{pro.Industry.Name}}</span></h6>
+                <h6 class="suppliers">Suppliers</h6>
+                <h5 class="arraysupplier" *ngIf="pro.Suppliers.length==0; else anothersupplier " style="color:blueviolet">No Suppliers Yet.</h5>
+                <ng-template #anothersupplier>
+                    <h5 class="arraysupplier">{{pro.Suppliers[0].Name}}</h5>
+                </ng-template>
+                <button class="tds">TDS</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
